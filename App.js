@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import {
+  StatusBar,
   AppRegistry,
   StyleSheet,
   Text,
@@ -61,6 +62,7 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container} {...this._panResponder.panHandlers}>
+        <StatusBar hidden />
         <View style={styles.zone1} />
         <View style={styles.center}>
           <TouchableOpacity onPress={this.onPress}>
